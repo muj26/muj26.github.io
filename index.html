@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mujaheed Shaikh</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujaheed Shaikh | Professor of Health Governance</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f4f4f4; color: #333; }
-        .box { text-align: center; border: 1px solid #ddd; padding: 40px; background: white; border-radius: 8px; }
+        /* Professional Dark Theme */
+        body { font-family: 'Inter', -apple-system, sans-serif; display: flex; margin: 0; color: #e0e0e0; background: #1a1c1e; line-height: 1.8; }
+        
+        /* Sidebar Navigation */
+        nav { width: 280px; height: 100vh; position: fixed; background: #111; border-right: 1px solid #333; padding: 40px 25px; overflow-y: auto; }
+        nav h1 { font-size: 1.4rem; color: #fff; margin-bottom: 5px; }
+        nav p { font-size: 0.9rem; color: #aaa; margin-bottom: 30px; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { margin-bottom: 12px; }
+        nav ul li a { text-decoration: none; color: #81b1ff; font-weight: 500; font-size: 0.95rem; transition: 0.3s; }
+        nav ul li a:hover { color: #fff; border-left: 3px solid #81b1ff; padding-left: 10px; }
+        
+        /* Main Content Area */
+        main { margin-left: 330px; padding: 60px 50px; max-width: 800px; }
+        h2 { font-size: 1.8rem; border-bottom: 1px solid #444; padding-bottom: 10px; margin-bottom: 25px; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
+        .headshot { width: 100%; border-radius: 8px; margin-bottom: 20px; border: 1px solid #444; }
+        
+        /* Text styling */
+        p { margin-bottom: 20px; font-size: 1.05rem; }
     </style>
 </head>
 <body>
-    <div class="box">
+    <nav>
+        <img src="photo.jpg" alt="Mujaheed Shaikh" class="headshot">
         <h1>Mujaheed Shaikh</h1>
-        <p>Professor of Health Governance</p>
-        <p><em>Website under construction. Please check back soon.</em></p>
-    </div>
+        <p>Professor of Health Governance<br>Hertie School, Berlin</p>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="interests.html">Areas of Interest</a></li>
+            <li><a href="research-publications.html">Research Publications</a></li>
+            <li><a href="policy-publications.html">Policy Publications</a></li>
+            <li><a href="projects-grants.html">Ongoing Projects & Grants</a></li>
+            <li><a href="talks.html">Policy Events & Talks</a></li>
+            <li><a href="seminars.html">Research Seminars</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am Mujaheed, and I am glad you are here to learn more about me.</p>
+            
+            <p>I am a tenured Professor of Health Governance at the Hertie School in Berlin and a Visiting Researcher at Imperial College Business School, London. I also serve on the editorial board of BMJ Public Health and am affiliated with the Center for Fundamental Rights at the Hertie School.</p>
+            
+            <p>I am a health economist with research interests spanning health governance, pharmaceutical economics, and public policy. My work examines how incentives, regulation, and institutional design shape health system performance, with a particular focus on pharmaceutical innovation for rare and neglected diseases, access to medicines, and regulatory frameworks. In the same vein, I also study risky health behaviors and the role of policy in influencing individual and population-level health outcomes in both high-income and Low- and Middle-income countries.</p>
+            
+            <p>My research is intended to inform academic discourse as well as decision-making by policymakers, multilateral organizations, and private-sector actors seeking evidence-based strategies to improve health outcomes, particularly in developing-country contexts.</p>
+            
+            <p>I hold a PhD in Economics from Frankfurt School of Finance and Management and a Master’s degree in International Health Management from Imperial College London.</p>
+        </section>
+    </main>
 </body>
 </html>
