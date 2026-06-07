@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mujaheed Shaikh</title>
+<meta name="description" content="Mujaheed Shaikh, Professor of Health Governance at the Hertie School, Berlin. Site being updated.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23163d33'/%3E%3Ctext x='31' y='45' font-family='Georgia,serif' font-size='42' font-weight='600' text-anchor='middle' fill='%23f3efe5'%3EM%3C/text%3E%3Ccircle cx='49' cy='47' r='3.6' fill='%23a8652a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,400..500&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pine:#163d33; --pine-2:#0f2c25; --cream:#f3efe5; --ochre:#c98b4f;
+    --serif:"Fraunces",Georgia,serif; --sans:"Libre Franklin",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:var(--sans);
+    color:var(--cream);
+    background:radial-gradient(125% 130% at 80% 0%,var(--pine) 0%,var(--pine-2) 72%);
+    min-height:100svh;
+    display:flex; align-items:center; justify-content:center;
+    padding:2rem; position:relative; overflow:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";position:absolute;inset:0;
+    background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);
+    background-size:4px 4px;opacity:.55;pointer-events:none;
+  }
+  .card{position:relative;z-index:1;max-width:640px;text-align:left}
+  .eyebrow{
+    font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--ochre);margin-bottom:1.6rem;
+    opacity:0;transform:translateY(16px);animation:rise .8s ease .1s forwards;
+  }
+  h1{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(2.8rem,9vw,5.2rem);line-height:.98;letter-spacing:-.025em;
+    opacity:0;transform:translateY(18px);animation:rise .9s ease .22s forwards;
+  }
+  h1 em{font-style:italic;color:var(--ochre)}
+  .msg{
+    margin-top:1.8rem;font-size:clamp(1.05rem,2.2vw,1.3rem);line-height:1.55;
+    max-width:42ch;color:color-mix(in srgb,var(--cream) 84%,transparent);
+    opacity:0;transform:translateY(18px);animation:rise .9s ease .38s forwards;
+  }
+  .rule{
+    width:54px;height:2px;background:var(--ochre);margin:2.4rem 0 1.6rem;
+    opacity:0;animation:fade .9s ease .5s forwards;
+  }
+  .meta{
+    font-size:.95rem;color:color-mix(in srgb,var(--cream) 70%,transparent);
+    line-height:1.8;opacity:0;transform:translateY(16px);animation:rise .9s ease .56s forwards;
+  }
+  .meta a{color:var(--cream);text-decoration:none;border-bottom:1px solid var(--ochre);padding-bottom:1px;transition:color .2s}
+  .meta a:hover{color:var(--ochre)}
+  @keyframes rise{to{opacity:1;transform:none}}
+  @keyframes fade{to{opacity:1}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important;transform:none!important}}
+</style>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">Hertie School &middot; Berlin</p>
+    <h1>Mujaheed<br><em>Shaikh</em></h1>
+    <p class="msg">My website is being rebuilt and will be back shortly. Thank you for your patience.</p>
+    <div class="rule"></div>
+    <p class="meta">
+      Professor of Health Governance, Hertie School<br>
+      <a href="mailto:shaikh@hertie-school.org">shaikh@hertie-school.org</a>
+    </p>
+  </main>
+</body>
+</html>
