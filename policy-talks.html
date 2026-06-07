@@ -1,141 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Policy Talks | Mujaheed Shaikh</title>
-    <style>
-        /* Professional Dark Theme */
-        body { font-family: 'Inter', -apple-system, sans-serif; margin: 0; color: #e0e0e0; background: #1a1c1e; line-height: 1.6; }
-
-        /* Top Navigation Bar */
-        nav { width: 100%; background: #111; border-bottom: 1px solid #333; padding: 25px 0; position: sticky; top: 0; z-index: 1000; }
-        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: 0 20px; }
-        .nav-header { text-align: center; margin-bottom: 20px; }
-        nav h1 { font-size: 1.6rem; color: #fff; margin: 0; }
-        nav p.subtitle { font-size: 0.9rem; color: #aaa; margin: 5px 0 0 0; }
-
-        /* Horizontal Tabs */
-        nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        nav ul li a { text-decoration: none; color: #81b1ff; font-weight: 500; font-size: 0.85rem; transition: 0.3s; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
-        nav ul li a:hover { color: #fff; border-bottom: 2px solid #81b1ff; }
-
-        /* Main Content Area */
-        main { margin: 40px auto; padding: 0 20px; max-width: 900px; }
-        h2 { font-size: 2rem; border-bottom: 2px solid #81b1ff; padding-bottom: 10px; margin-top: 50px; margin-bottom: 30px; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
-        
-        /* Talk Item Styling */
-        .talk-item { margin-bottom: 25px; padding: 20px; background: #25282c; border-radius: 8px; border-left: 4px solid #81b1ff; }
-        .talk-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
-        .talk-event { font-weight: bold; color: #fff; font-size: 1.1rem; }
-        .talk-year { color: #81b1ff; font-weight: bold; background: rgba(129, 177, 255, 0.1); padding: 2px 10px; border-radius: 4px; font-size: 0.9rem; }
-        .talk-role { color: #81b1ff; font-weight: 600; display: block; margin-bottom: 5px; font-size: 0.95rem; text-transform: uppercase; }
-        .talk-desc { font-size: 1.05rem; color: #e0e0e0; font-style: italic; }
-
-        footer { margin-top: 80px; border-top: 1px solid #333; padding: 40px 0; text-align: center; font-size: 0.9rem; color: #777; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policy Talks | Mujaheed Shaikh</title>
+<meta name="description" content="High-level policy talks and keynotes by Mujaheed Shaikh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-    <div class="nav-container">
-        <div class="nav-header">
-            <h1>Mujaheed Shaikh</h1>
-            <p class="subtitle">Professor of Health Governance | Hertie School, Berlin</p>
-        </div>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="peer-reviewed-publications.html">Peer-Reviewed Publications</a></li>
-            <li><a href="book-chapters.html">Book Chapters</a></li>
-            <li><a href="policy-contributions.html">Policy Contributions</a></li>
-            <li><a href="awards-grants.html">Awards & Grants</a></li>
-            <li><a href="research-seminars.html">Research Seminars</a></li>
-            <li><a href="policy-talks.html">Policy Talks</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-        </ul>
+<header class="site-header" id="top">
+  <nav class="wrap nav">
+    <a class="brand" href="index.html">Mujaheed <span>Shaikh</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="peer-reviewed-publications.html">Publications</a></li>
+      <li><a href="index.html#press">Media</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <label class="hamburger" for="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></label>
+  </nav>
+</header>
+
+<section class="page-head has-photo" style="--bg:url('who-speech.jpg')">
+  <div class="wrap">
+    <p class="section-label">Speaking</p>
+    <h1>High-Level Policy Talks</h1>
+    <p>Keynotes, panels, and invited addresses at international health-policy forums.</p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="wrap">
+<ul class="talk-list"><li>
+  <span class="t-year">2025</span>
+  <div><div class="t-role">Panel Discussion</div><p class="t-event">Regional World Health Summit, India</p><p class="t-title">Financing neglected tropical diseases.</p></div>
+</li><li>
+  <span class="t-year">2024</span>
+  <div><div class="t-role">Spotlight Speaker</div><p class="t-event">2nd WHO Meeting of the Minds, Athens</p><p class="t-title">Healthcare financing as an essential tool to transform health system quality of care.</p></div>
+</li><li>
+  <span class="t-year">2023</span>
+  <div><div class="t-role">Panel Discussion</div><p class="t-event">Berlin Science Week</p><p class="t-title">Digitizing healthcare: an India&ndash;EU collaboration for a secure, open, interoperable digital health ecosystem.</p></div>
+</li><li>
+  <span class="t-year">2023</span>
+  <div><div class="t-role">Keynote Speaker</div><p class="t-event">National Health Service Summit, Portugal</p><p class="t-title">Health governance and financing: more autonomy for better results?</p></div>
+</li><li>
+  <span class="t-year">2022</span>
+  <div><div class="t-role">Panel Discussant</div><p class="t-event">Berlin Science Week</p><p class="t-title">How (not) to increase vaccination willingness.</p></div>
+</li><li>
+  <span class="t-year">2022</span>
+  <div><div class="t-role">Panel Discussant</div><p class="t-event">COMPAR-EU Final Conference Advocacy Event</p><p class="t-title">Self-management as part of a shared-care approach.</p></div>
+</li><li>
+  <span class="t-year">2019</span>
+  <div><div class="t-role">Report Launch</div><p class="t-event">World Health Summit, Berlin</p><p class="t-title">Launch of the Governance Report 2019, Oxford University Press.</p></div>
+</li><li>
+  <span class="t-year">2019</span>
+  <div><div class="t-role">Lecture</div><p class="t-event">Berlin-Brandenburg Academy of Science</p><p class="t-title">The private sector and the SDGs.</p></div>
+</li></ul>  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="name">Mujaheed Shaikh</p>
+        <p>Professor of Health Governance, Hertie School, Berlin. Health economist working on governance, pharmaceutical markets, and health inequalities.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="index.html#about">About</a>
+        <a href="peer-reviewed-publications.html">Publications</a>
+        <a href="book-chapters.html">Book Chapters</a>
+        <a href="policy-contributions.html">Policy Contributions</a>
+        <a href="teaching.html">Teaching</a>
+      </div>
+      <div class="footer-col">
+        <h5>More</h5>
+        <a href="awards-grants.html">Awards &amp; Grants</a>
+        <a href="research-seminars.html">Research Seminars</a>
+        <a href="policy-talks.html">Policy Talks</a>
+        <a href="media.html">Media</a>
+        <a href="mailto:shaikh@hertie-school.org">shaikh@hertie-school.org</a>
+      </div>
     </div>
-</nav>
-
-<main>
-    <h2>High-Level Policy Talks</h2>
-
-    <div class="talk-item">
-        <div class="talk-header">
-            <span class="talk-event">Regional World Health Summit, India</span>
-            <span class="talk-year">2025</span>
-        </div>
-        <span class="talk-role">Panel Discussion</span>
-        <span class="talk-desc">Financing Neglected Tropical Diseases.</span>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Mujaheed Shaikh &middot; Hertie School, Friedrichstra&szlig;e 180, 10117 Berlin</span>
+      <span><a href="mailto:shaikh@hertie-school.org">shaikh@hertie-school.org</a></span>
     </div>
-
-    <div class="talk-item">
-        <div class="talk-header">
-            <span class="talk-event">2nd World Health Organization Meeting of the Minds, Athens</span>
-            <span class="talk-year">2024</span>
-        </div>
-        <span class="talk-role">Spotlight Speaker</span>
-        <span class="talk-desc">Health-care financing as an essential tool to transform health systems quality of care.</span>
-    </div>
-
-    <div class="talk-item">
-        <div class="talk-header">
-            <span class="talk-event">Berlin Science Week</span>
-            <span class="talk-year">2023</span>
-        </div>
-        <span class="talk-role">Panel Discussion</span>
-        <span class="talk-desc">Digitizing Healthcare: Developing a mutually profitable Collaboration between India and the EU to create a secure, open and interoperable Digital Health Ecosystem.</span>
-    </div>
-
-    <div class="talk-item">
-        <div class="talk-header">
-            <span class="talk-event">National Health Service Summit, Portugal</span>
-            <span class="talk-year">2023</span>
-        </div>
-        <span class="talk-role">Keynote Speaker</span>
-        <span class="talk-desc">Health Governance and Financing: More Autonomy for better Results?</span>
-    </div>
-
-    <div class="talk-item">
-        <div class="talk-header">
-            <span class="talk-event">Berlin Science Week</span>
-            <span class="talk-year">2022</span>
-        </div>
-        <span class="talk-role">Panel Discussant</span>
-        <span class="talk-desc">How (not) to increase vaccination willingness.</span>
-    </div>
-
-    <div class="talk-item">
-        <div class="talk-header">
-            <span class="talk-event">COMPAR-EU Final Conference Advocacy Event</span>
-            <span class="talk-year">2022</span>
-        </div>
-        <span class="talk-role">Panel Discussant</span>
-        <span class="talk-desc">Self-Management as Part of Shared Care Approach.</span>
-    </div>
-
-    <div class="talk-item">
-        <div class="talk-header">
-            <span class="talk-event">World Health Summit, Berlin</span>
-            <span class="talk-year">2019</span>
-        </div>
-        <span class="talk-role">Report Launch</span>
-        <span class="talk-desc">Launch of the Governance Report 2019, Oxford University Press.</span>
-    </div>
-
-    <div class="talk-item">
-        <div class="talk-header">
-            <span class="talk-event">Berlin Brandenburg Academy of Science</span>
-            <span class="talk-year">2019</span>
-        </div>
-        <span class="talk-role">Lecture</span>
-        <span class="talk-desc">The Private Sector and SDGs.</span>
-    </div>
-
-</main>
-
-<footer>
-    Hertie School • Friedrichstraße 180 • 10117 Berlin, Germany
+  </div>
 </footer>
 
+<script>
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+  const toggle = document.getElementById('nav-toggle');
+  document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => { toggle.checked = false; }));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

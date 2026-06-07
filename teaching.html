@@ -1,121 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching | Mujaheed Shaikh</title>
-    <style>
-        /* Professional Dark Theme */
-        body { font-family: 'Inter', -apple-system, sans-serif; margin: 0; color: #e0e0e0; background: #1a1c1e; line-height: 1.6; }
-
-        /* Top Navigation Bar */
-        nav { width: 100%; background: #111; border-bottom: 1px solid #333; padding: 25px 0; position: sticky; top: 0; z-index: 1000; }
-        .nav-container { max-width: 1300px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: 0 20px; }
-        .nav-header { text-align: center; margin-bottom: 20px; }
-        nav h1 { font-size: 1.6rem; color: #fff; margin: 0; }
-        nav p.subtitle { font-size: 0.9rem; color: #aaa; margin: 5px 0 0 0; }
-
-        /* Horizontal Tabs */
-        nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
-        nav ul li a { text-decoration: none; color: #81b1ff; font-weight: 500; font-size: 0.8rem; transition: 0.3s; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
-        nav ul li a:hover { color: #fff; border-bottom: 2px solid #81b1ff; }
-
-        /* Main Content Area */
-        main { margin: 40px auto; padding: 0 20px; max-width: 900px; }
-        h2 { font-size: 2rem; border-bottom: 2px solid #81b1ff; padding-bottom: 10px; margin-top: 50px; margin-bottom: 30px; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
-        h3 { color: #81b1ff; font-size: 1.4rem; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #81b1ff; padding-left: 15px; }
-        
-        /* Teaching List Styling */
-        .teaching-category { margin-bottom: 40px; }
-        .course-list { list-style: none; padding: 0; }
-        .course-item { 
-            background: #25282c; 
-            margin-bottom: 10px; 
-            padding: 15px; 
-            border-radius: 6px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
-            border: 1px solid #333;
-        }
-        .course-name { font-weight: 500; color: #fff; }
-        .course-level { 
-            font-size: 0.75rem; 
-            background: rgba(129, 177, 255, 0.15); 
-            color: #81b1ff; 
-            padding: 3px 10px; 
-            border-radius: 4px; 
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        footer { margin-top: 80px; border-top: 1px solid #333; padding: 40px 0; text-align: center; font-size: 0.9rem; color: #777; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teaching | Mujaheed Shaikh</title>
+<meta name="description" content="Courses taught by Mujaheed Shaikh across graduate, undergraduate, and executive programmes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-    <div class="nav-container">
-        <div class="nav-header">
-            <h1>Mujaheed Shaikh</h1>
-            <p class="subtitle">Professor of Health Governance | Hertie School, Berlin</p>
-        </div>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="peer-reviewed-publications.html">Peer-Reviewed Publications</a></li>
-            <li><a href="book-chapters.html">Book Chapters</a></li>
-            <li><a href="policy-contributions.html">Policy Contributions</a></li>
-            <li><a href="awards-grants.html">Awards & Grants</a></li>
-            <li><a href="research-seminars.html">Research Seminars</a></li>
-            <li><a href="policy-talks.html">Policy Talks</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="media.html">Media</a></li>
-        </ul>
+<header class="site-header" id="top">
+  <nav class="wrap nav">
+    <a class="brand" href="index.html">Mujaheed <span>Shaikh</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="peer-reviewed-publications.html">Publications</a></li>
+      <li><a href="index.html#press">Media</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <label class="hamburger" for="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></label>
+  </nav>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="section-label">Teaching</p>
+    <h1>Teaching</h1>
+    <p>Courses across master's, doctoral, undergraduate, and executive programmes.</p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="wrap">
+<p class="section-label">Hertie School</p>
+<ul class="course-list" style="margin-bottom:3rem"><li><span class="course">Policy Process: Health as Social Policy</span><span class="level">MPP / MIA</span></li><li><span class="course">Applied Research Methods</span><span class="level">MPP / MIA</span></li><li><span class="course">Economics and Policy of Healthcare</span><span class="level">MPP / MIA</span></li><li><span class="course">Inequality in the Finance &amp; Distribution of Health</span><span class="level">MPP / MIA</span></li><li><span class="course">Project Course: Evaluation and Design of Health Policies</span><span class="level">MPP</span></li><li><span class="course">PhD Mini-course: Difference-in-Differences</span><span class="level">PhD</span></li><li><span class="course">Inequality, Ethnicity, Health</span><span class="level">Certificate</span></li><li><span class="course">Health Finance and Equity in Healthcare Access</span><span class="level">Executive</span></li><li><span class="course">Prospects and Challenges in Healthcare</span><span class="level">Executive</span></li><li><span class="course">Rethinking Health Policy</span><span class="level">Executive</span></li></ul>
+<p class="section-label">Vienna University of Economics and Business</p>
+<ul class="course-list" style="margin-bottom:3rem"><li><span class="course">Econometrics and Empirical Economic Research</span><span class="level">MSc</span></li><li><span class="course">Applied Socioeconomic Theories and Methods</span><span class="level">MSc</span></li><li><span class="course">Foundations of Health Economics</span><span class="level">BSc</span></li><li><span class="course">Challenges in Social Sustainability</span><span class="level">BSc</span></li><li><span class="course">Applied Microeconomics</span><span class="level">BSc</span></li></ul>
+<p class="section-label">Frankfurt School of Finance and Management</p>
+<ul class="course-list"><li><span class="course">Strategic Management and Organisational Design</span><span class="level">PhD</span></li></ul>  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="name">Mujaheed Shaikh</p>
+        <p>Professor of Health Governance, Hertie School, Berlin. Health economist working on governance, pharmaceutical markets, and health inequalities.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="index.html#about">About</a>
+        <a href="peer-reviewed-publications.html">Publications</a>
+        <a href="book-chapters.html">Book Chapters</a>
+        <a href="policy-contributions.html">Policy Contributions</a>
+        <a href="teaching.html">Teaching</a>
+      </div>
+      <div class="footer-col">
+        <h5>More</h5>
+        <a href="awards-grants.html">Awards &amp; Grants</a>
+        <a href="research-seminars.html">Research Seminars</a>
+        <a href="policy-talks.html">Policy Talks</a>
+        <a href="media.html">Media</a>
+        <a href="mailto:shaikh@hertie-school.org">shaikh@hertie-school.org</a>
+      </div>
     </div>
-</nav>
-
-<main>
-    <h2>Teaching</h2>
-
-    <section class="teaching-category">
-        <h3>At the Hertie School</h3>
-        <div class="course-list">
-            <div class="course-item"><span class="course-name">Policy Process: Health as Social Policy</span> <span class="course-level">MPP / MIA</span></div>
-            <div class="course-item"><span class="course-name">Applied Research Methods</span> <span class="course-level">MPP / MIA</span></div>
-            <div class="course-item"><span class="course-name">Economics and Policy of Healthcare</span> <span class="course-level">MPP / MIA</span></div>
-            <div class="course-item"><span class="course-name">Inequality in the Finance & Distribution of Health</span> <span class="course-level">MPP / MIA</span></div>
-            <div class="course-item"><span class="course-name">Project Course: Evaluation and Design of Health Policies</span> <span class="course-level">MPP</span></div>
-            <div class="course-item"><span class="course-name">PhD Mini-course: Difference-in-Differences</span> <span class="course-level">PhD</span></div>
-            <div class="course-item"><span class="course-name">Certificate course: Inequality, Ethnicity, Health</span> <span class="course-level">Certificate</span></div>
-            <div class="course-item"><span class="course-name">Health Finance and Equity in Healthcare Access</span> <span class="course-level">Executive</span></div>
-            <div class="course-item"><span class="course-name">Prospects and Challenges in Healthcare</span> <span class="course-level">Executive</span></div>
-            <div class="course-item"><span class="course-name">Rethinking Health Policy</span> <span class="course-level">Executive</span></div>
-        </div>
-    </section>
-
-    <section class="teaching-category">
-        <h3>When I was at Vienna University of Economics and Business</h3>
-        <div class="course-list">
-            <div class="course-item"><span class="course-name">Econometrics and Empirical Economic Research</span> <span class="course-level">MSc</span></div>
-            <div class="course-item"><span class="course-name">Applied Socioeconomic Theories and Methods</span> <span class="course-level">MSc</span></div>
-            <div class="course-item"><span class="course-name">Foundations of Health Economics</span> <span class="course-level">BSc</span></div>
-            <div class="course-item"><span class="course-name">Challenges in Social Sustainability</span> <span class="course-level">BSc</span></div>
-            <div class="course-item"><span class="course-name">Applied Microeconomics</span> <span class="course-level">BSc</span></div>
-        </div>
-    </section>
-
-    <section class="teaching-category">
-        <h3>When I was a PhD student at Frankfurt School of Finance and Management</h3>
-        <div class="course-list">
-            <div class="course-item"><span class="course-name">Strategic Management and Organisational Design</span> <span class="course-level">BSc</span></div>
-        </div>
-    </section>
-
-</main>
-
-<footer>
-    Hertie School • Friedrichstraße 180 • 10117 Berlin, Germany
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Mujaheed Shaikh &middot; Hertie School, Friedrichstra&szlig;e 180, 10117 Berlin</span>
+      <span><a href="mailto:shaikh@hertie-school.org">shaikh@hertie-school.org</a></span>
+    </div>
+  </div>
 </footer>
 
+<script>
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+  const toggle = document.getElementById('nav-toggle');
+  document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => { toggle.checked = false; }));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

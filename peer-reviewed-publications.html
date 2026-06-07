@@ -1,142 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peer-Reviewed Publications | Mujaheed Shaikh</title>
-    <style>
-        /* Styles remain exactly the same as Index for consistency */
-        body { font-family: 'Inter', -apple-system, sans-serif; margin: 0; color: #e0e0e0; background: #1a1c1e; line-height: 1.6; }
-        nav { width: 100%; background: #111; border-bottom: 1px solid #333; padding: 25px 0; position: sticky; top: 0; z-index: 1000; }
-        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: 0 20px; }
-        .nav-header { text-align: center; margin-bottom: 20px; }
-        nav h1 { font-size: 1.6rem; color: #fff; margin: 0; }
-        nav p.subtitle { font-size: 0.9rem; color: #aaa; margin: 5px 0 0 0; }
-        nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        nav ul li a { text-decoration: none; color: #81b1ff; font-weight: 500; font-size: 0.85rem; transition: 0.3s; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
-        nav ul li a:hover { color: #fff; border-bottom: 2px solid #81b1ff; }
-        main { margin: 40px auto; padding: 0 20px; max-width: 900px; }
-        h2 { font-size: 2rem; border-bottom: 2px solid #81b1ff; padding-bottom: 10px; margin-top: 50px; margin-bottom: 30px; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
-        .theme-section { margin-bottom: 40px; }
-        .theme-title { color: #81b1ff; font-size: 1.4rem; margin-bottom: 20px; border-left: 4px solid #81b1ff; padding-left: 15px; }
-        .pub-item { margin-bottom: 20px; padding-left: 10px; }
-        .pub-text { font-size: 1.05rem; color: #e0e0e0; }
-        .journal-name { font-weight: bold; color: #fff; }
-        .wip-item { margin-bottom: 15px; padding: 15px; background: #25282c; border-radius: 6px; border-left: 4px solid #aaa; }
-        .status-tag { font-size: 0.8rem; background: #81b1ff; color: #111; padding: 2px 8px; border-radius: 4px; font-weight: bold; text-transform: uppercase; margin-left: 10px; }
-        footer { margin-top: 80px; border-top: 1px solid #333; padding: 40px 0; text-align: center; font-size: 0.9rem; color: #777; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications | Mujaheed Shaikh</title>
+<meta name="description" content="Peer-reviewed publications and work in progress by Mujaheed Shaikh, Professor of Health Governance at the Hertie School, Berlin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-    <div class="nav-container">
-        <div class="nav-header">
-            <h1>Mujaheed Shaikh</h1>
-            <p class="subtitle">Professor of Health Governance | Hertie School, Berlin</p>
-        </div>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="peer-reviewed-publications.html">Peer-Reviewed Publications</a></li>
-            <li><a href="book-chapters.html">Book Chapters</a></li>
-            <li><a href="policy-contributions.html">Policy Contributions</a></li>
-            <li><a href="awards-grants.html">Awards & Grants</a></li>
-            <li><a href="research-seminars.html">Research Seminars</a></li>
-            <li><a href="policy-talks.html">Policy Talks</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-        </ul>
-    </div>
-</nav>
+<header class="site-header" id="top">
+  <nav class="wrap nav">
+    <a class="brand" href="index.html">Mujaheed <span>Shaikh</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="peer-reviewed-publications.html">Publications</a></li>
+      <li><a href="index.html#press">Media</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <label class="hamburger" for="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+  </nav>
+</header>
 
-<main>
-    <h2>Publications</h2>
+<section class="page-head">
+  <div class="wrap">
+    <p class="section-label">Research Output</p>
+    <h1>Peer-Reviewed Publications</h1>
+    <p>Published work across health behaviours, governance, pharmaceutical economics, and health inequalities, followed by current work in progress.</p>
+  </div>
+</section>
 
-    <div class="theme-section">
-        <div class="theme-title">Health and Health Behaviors</div>
-        <div class="pub-item">
-            <span class="pub-text">Renner, A-T., Shaikh, M., & Spitzer, S. 2025. Absence from work and lifetime smoking behavior: Evidence from European maternal leave policies. <span class="journal-name">Journal of Health Economics</span>. Vol. 102: 103004.</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Müller, T., Shaikh, M., & Kauer, L. 2025. Retirement and health plan choice. <span class="journal-name">Social Science & Medicine</span>. Vol. 370: 117844.</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Spitzer, S., Shaikh, M., & Weber, D. 2022. Older Europeans’ health perception and their adaptive behaviour during the COVID-19 pandemic. <span class="journal-name">European Journal of Public Health</span>, Vol. 32(2).</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Spitzer, S., & Shaikh, M. 2022. Health misperception and healthcare utilisation of older Europeans. <span class="journal-name">The Journal of the Economics of Ageing</span>, Vol. 22.</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Mueller, T., & Shaikh, M. 2018. Your retirement and my health behaviour: Evidence on retirement externalities from a fuzzy regression discontinuity design. <span class="journal-name">Journal of Health Economics</span>. 57: 45-59.</span>
-        </div>
-    </div>
+<section class="content">
+  <div class="wrap">
 
-    <div class="theme-section">
-        <div class="theme-title">Policy and Governance</div>
-        <div class="pub-item">
-            <span class="pub-text">Van Gestel, R., Shaikh, M., Vermijs, F., & Riumallo-Herl, C. 2025. Health programme spillover effects on childhood vaccination in India: a difference-in-differences analysis of the Zinc and Oral Rehydration Salts Programme. <span class="journal-name">British Medical Journal Public Health</span>. Vol. 3, Issue 2.</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Schmitt, T., Haarmann, A., & Shaikh, M. 2022. Strengthening health system governance in Germany: looking back, planning ahead. <span class="journal-name">Health Economics, Policy and Law</span>. 18(1):14-31.</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Singh, S., Shaikh, M., Hauck, K., & Miraldo, M. 2021. Impacts of introducing and lifting nonpharmaceutical interventions on COVID-19 daily growth rate and compliance in the United States. <span class="journal-name">Proceedings of the National Academy of Sciences (PNAS)</span>. 118(12).</span>
-        </div>
+    <div class="pub-group">
+      <h2>Health &amp; Health Behaviours</h2>
+      <ul class="ref-list">
+        <li><span class="yr">2025</span><span class="ref">Renner, A-T., Shaikh, M., &amp; Spitzer, S. Absence from work and lifetime smoking behavior: evidence from European maternal leave policies. <span class="venue">Journal of Health Economics</span>, 102: 103004.</span></li>
+        <li><span class="yr">2025</span><span class="ref">M&uuml;ller, T., Shaikh, M., &amp; Kauer, L. Retirement and health plan choice. <span class="venue">Social Science &amp; Medicine</span>, 370: 117844.</span></li>
+        <li><span class="yr">2022</span><span class="ref">Spitzer, S., Shaikh, M., &amp; Weber, D. Older Europeans' health perception and their adaptive behaviour during the COVID-19 pandemic. <span class="venue">European Journal of Public Health</span>, 32(2).</span></li>
+        <li><span class="yr">2022</span><span class="ref">Spitzer, S., &amp; Shaikh, M. Health misperception and healthcare utilisation of older Europeans. <span class="venue">The Journal of the Economics of Ageing</span>, 22.</span></li>
+        <li><span class="yr">2018</span><span class="ref">Mueller, T., &amp; Shaikh, M. Your retirement and my health behaviour: evidence on retirement externalities from a fuzzy regression discontinuity design. <span class="venue">Journal of Health Economics</span>, 57: 45&ndash;59.</span></li>
+      </ul>
     </div>
 
-    <div class="theme-section">
-        <div class="theme-title">Pharmaceuticals</div>
-        <div class="pub-item">
-            <span class="pub-text">Shaikh, M., Del Giudice, P., & Kourouklis, D. 2020. Revisiting the Relationship between Price Regulation and Pharmaceutical R&D Investment. <span class="journal-name">Applied Health Economics and Health Policy</span>. 19: 217–229.</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Shaikh, M., & Gandjour, A. 2019. Pharmaceutical expenditure and gross domestic product: Evidence of simultaneous effects using a two-step instrumental variables strategy. <span class="journal-name">Health Economics</span>. 28(1): 101-122.</span>
-        </div>
+    <div class="pub-group">
+      <h2>Policy &amp; Governance</h2>
+      <ul class="ref-list">
+        <li><span class="yr">2025</span><span class="ref">Van Gestel, R., Shaikh, M., Vermijs, F., &amp; Riumallo-Herl, C. Health programme spillover effects on childhood vaccination in India: a difference-in-differences analysis of the Zinc and Oral Rehydration Salts Programme. <span class="venue">BMJ Public Health</span>, 3(2).</span></li>
+        <li><span class="yr">2022</span><span class="ref">Schmitt, T., Haarmann, A., &amp; Shaikh, M. Strengthening health system governance in Germany: looking back, planning ahead. <span class="venue">Health Economics, Policy and Law</span>, 18(1): 14&ndash;31.</span></li>
+        <li><span class="yr">2021</span><span class="ref">Singh, S., Shaikh, M., Hauck, K., &amp; Miraldo, M. Impacts of introducing and lifting nonpharmaceutical interventions on COVID-19 daily growth rate and compliance in the United States. <span class="venue">PNAS</span>, 118(12).</span></li>
+      </ul>
     </div>
 
-    <div class="theme-section">
-        <div class="theme-title">Health Inequalities</div>
-        <div class="pub-item">
-            <span class="pub-text">Shaikh, M., Ota, E., & Van Gestel, R. 2023. Childhood immunization and competing mortality risks in Kenya: A longitudinal analysis for multiparous mothers. <span class="journal-name">Journal of Pediatrics</span>, 113590.</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Shaikh, M., Tymoszuk, U., Williamon, A., & Miraldo, M. 2021. Socioeconomic inequalities in arts engagement and depression among older adults in the United Kingdom. <span class="journal-name">Public Health</span>. 198: 307-314.</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Nicodemo, C., Barzin, S., Cavalli, N., et al. 2020. Measuring geographical disparities in England at the time of COVID-19. <span class="journal-name">British Medical Journal Open</span>. 10(9).</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Shaikh, M., Miraldo, M., & Renner, A.T. 2018. Waiting time at health facilities and social class: Evidence from the Indian caste system. <span class="journal-name">PLOS One</span>. 13(10).</span>
-        </div>
-        <div class="pub-item">
-            <span class="pub-text">Barrenho, E., Miraldo, M., Shaikh, M., & Atun, R. 2017. Vertical and horizontal equity of funding for malaria control. <span class="journal-name">British Medical Journal Global Health</span>. 2(4).</span>
-        </div>
+    <div class="pub-group">
+      <h2>Pharmaceuticals</h2>
+      <ul class="ref-list">
+        <li><span class="yr">2020</span><span class="ref">Shaikh, M., Del Giudice, P., &amp; Kourouklis, D. Revisiting the relationship between price regulation and pharmaceutical R&amp;D investment. <span class="venue">Applied Health Economics and Health Policy</span>, 19: 217&ndash;229.</span></li>
+        <li><span class="yr">2019</span><span class="ref">Shaikh, M., &amp; Gandjour, A. Pharmaceutical expenditure and gross domestic product: evidence of simultaneous effects using a two-step instrumental variables strategy. <span class="venue">Health Economics</span>, 28(1): 101&ndash;122.</span></li>
+      </ul>
     </div>
 
-    <div class="theme-section">
-        <div class="theme-title">Others</div>
-        <div class="pub-item">
-            <span class="pub-text">Laliotis, I., Shaikh, M., Stavropoulou, & Kourouklis, D. 2023. Retirement and household expenditure in turbulent times. <span class="journal-name">Journal of Family and Economic Issues</span>. 44: 968-989.</span>
-        </div>
+    <div class="pub-group">
+      <h2>Health Inequalities</h2>
+      <ul class="ref-list">
+        <li><span class="yr">2023</span><span class="ref">Shaikh, M., Ota, E., &amp; Van Gestel, R. Childhood immunization and competing mortality risks in Kenya: a longitudinal analysis for multiparous mothers. <span class="venue">Journal of Pediatrics</span>, 113590.</span></li>
+        <li><span class="yr">2021</span><span class="ref">Shaikh, M., Tymoszuk, U., Williamon, A., &amp; Miraldo, M. Socioeconomic inequalities in arts engagement and depression among older adults in the United Kingdom. <span class="venue">Public Health</span>, 198: 307&ndash;314.</span></li>
+        <li><span class="yr">2020</span><span class="ref">Nicodemo, C., Barzin, S., Cavalli, N., et al. Measuring geographical disparities in England at the time of COVID-19. <span class="venue">BMJ Open</span>, 10(9).</span></li>
+        <li><span class="yr">2018</span><span class="ref">Shaikh, M., Miraldo, M., &amp; Renner, A-T. Waiting time at health facilities and social class: evidence from the Indian caste system. <span class="venue">PLOS ONE</span>, 13(10).</span></li>
+        <li><span class="yr">2017</span><span class="ref">Barrenho, E., Miraldo, M., Shaikh, M., &amp; Atun, R. Vertical and horizontal equity of funding for malaria control. <span class="venue">BMJ Global Health</span>, 2(4).</span></li>
+      </ul>
     </div>
 
-    <h2>Work in Progress</h2>
-    <div class="wip-item">
-        Goetjes, E., Panhuysen, J., Blankart, K., Shaikh, M. The Consequences of Medicine Shortages on Healthcare Utilization and Care Fragmentation. <span class="status-tag">R&R: European Journal of Health Economics</span>
+    <div class="pub-group">
+      <h2>Other</h2>
+      <ul class="ref-list">
+        <li><span class="yr">2023</span><span class="ref">Laliotis, I., Shaikh, M., Stavropoulou, C., &amp; Kourouklis, D. Retirement and household expenditure in turbulent times. <span class="venue">Journal of Family and Economic Issues</span>, 44: 968&ndash;989.</span></li>
+      </ul>
     </div>
-    <div class="wip-item">
-        Goetjes, E., Panhuysen, J., Shaikh, M., Blankart, K. Medicine Shortages, Global Dependency, and Competition in Times of a Pandemic. <span class="status-tag">R&R: Healthcare Management Science</span>
-    </div>
-    <div class="wip-item">
-        Shaikh, M., Miraldo, M., Galizzi, M. Enforcement, Substitution, and the Effectiveness of COVID-19 Vaccine Mandates.
-    </div>
-    <div class="wip-item">
-        Shaikh, M., Gestel, RV. Leader identity and Cesarean childbirths: Evidence from random allocations of leaders.
-    </div>
-</main>
 
-<footer>
-    Hertie School • Friedrichstraße 180 • 10117 Berlin, Germany
+    <div class="pub-group">
+      <h2>Work in Progress</h2>
+      <ul class="ref-list">
+        <li><span class="yr">R&amp;R</span><span class="ref">Goetjes, E., Panhuysen, J., Blankart, K., &amp; Shaikh, M. The consequences of medicine shortages on healthcare utilization and care fragmentation. <span class="venue">European Journal of Health Economics</span>.</span></li>
+        <li><span class="yr">R&amp;R</span><span class="ref">Goetjes, E., Panhuysen, J., Shaikh, M., &amp; Blankart, K. Medicine shortages, global dependency, and competition in times of a pandemic. <span class="venue">Healthcare Management Science</span>.</span></li>
+        <li><span class="yr">WP</span><span class="ref">Shaikh, M., Miraldo, M., &amp; Galizzi, M. Enforcement, substitution, and the effectiveness of COVID-19 vaccine mandates.</span></li>
+        <li><span class="yr">WP</span><span class="ref">Shaikh, M., &amp; Van Gestel, R. Leader identity and Cesarean childbirths: evidence from random allocations of leaders.</span></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="name">Mujaheed Shaikh</p>
+        <p>Professor of Health Governance, Hertie School, Berlin. Health economist working on governance, pharmaceutical markets, and health inequalities.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="index.html#about">About</a>
+        <a href="peer-reviewed-publications.html">Publications</a>
+        <a href="book-chapters.html">Book Chapters</a>
+        <a href="policy-contributions.html">Policy Contributions</a>
+        <a href="teaching.html">Teaching</a>
+      </div>
+      <div class="footer-col">
+        <h5>More</h5>
+        <a href="awards-grants.html">Awards &amp; Grants</a>
+        <a href="research-seminars.html">Research Seminars</a>
+        <a href="policy-talks.html">Policy Talks</a>
+        <a href="media.html">Media</a>
+        <a href="mailto:shaikh@hertie-school.org">shaikh@hertie-school.org</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Mujaheed Shaikh &middot; Hertie School, Friedrichstra&szlig;e 180, 10117 Berlin</span>
+      <span><a href="mailto:shaikh@hertie-school.org">shaikh@hertie-school.org</a></span>
+    </div>
+  </div>
 </footer>
 
+<script>
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+  const toggle = document.getElementById('nav-toggle');
+  document.querySelectorAll('.nav-links a').forEach(a =>
+    a.addEventListener('click', () => { toggle.checked = false; }));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
