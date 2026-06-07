@@ -3,76 +3,293 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mujaheed Shaikh</title>
-<meta name="description" content="Mujaheed Shaikh, Professor of Health Governance at the Hertie School, Berlin. Site being updated.">
-<meta name="robots" content="noindex">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23163d33'/%3E%3Ctext x='31' y='45' font-family='Georgia,serif' font-size='42' font-weight='600' text-anchor='middle' fill='%23f3efe5'%3EM%3C/text%3E%3Ccircle cx='49' cy='47' r='3.6' fill='%23a8652a'/%3E%3C/svg%3E">
+<title>Mujaheed Shaikh | Professor of Health Governance</title>
+<meta name="description" content="Mujaheed Shaikh is a health economist and tenured Professor of Health Governance at the Hertie School, Berlin.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,400..500&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --pine:#163d33; --pine-2:#0f2c25; --cream:#f3efe5; --ochre:#c98b4f;
-    --serif:"Fraunces",Georgia,serif; --sans:"Libre Franklin",system-ui,sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
-  body{
-    font-family:var(--sans);
-    color:var(--cream);
-    background:radial-gradient(125% 130% at 80% 0%,var(--pine) 0%,var(--pine-2) 72%);
-    min-height:100svh;
-    display:flex; align-items:center; justify-content:center;
-    padding:2rem; position:relative; overflow:hidden;
-    -webkit-font-smoothing:antialiased;
-  }
-  body::before{
-    content:"";position:absolute;inset:0;
-    background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);
-    background-size:4px 4px;opacity:.55;pointer-events:none;
-  }
-  .card{position:relative;z-index:1;max-width:640px;text-align:left}
-  .eyebrow{
-    font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;
-    color:var(--ochre);margin-bottom:1.6rem;
-    opacity:0;transform:translateY(16px);animation:rise .8s ease .1s forwards;
-  }
-  h1{
-    font-family:var(--serif);font-weight:400;
-    font-size:clamp(2.8rem,9vw,5.2rem);line-height:.98;letter-spacing:-.025em;
-    opacity:0;transform:translateY(18px);animation:rise .9s ease .22s forwards;
-  }
-  h1 em{font-style:italic;color:var(--ochre)}
-  .msg{
-    margin-top:1.8rem;font-size:clamp(1.05rem,2.2vw,1.3rem);line-height:1.55;
-    max-width:42ch;color:color-mix(in srgb,var(--cream) 84%,transparent);
-    opacity:0;transform:translateY(18px);animation:rise .9s ease .38s forwards;
-  }
-  .rule{
-    width:54px;height:2px;background:var(--ochre);margin:2.4rem 0 1.6rem;
-    opacity:0;animation:fade .9s ease .5s forwards;
-  }
-  .meta{
-    font-size:.95rem;color:color-mix(in srgb,var(--cream) 70%,transparent);
-    line-height:1.8;opacity:0;transform:translateY(16px);animation:rise .9s ease .56s forwards;
-  }
-  .meta a{color:var(--cream);text-decoration:none;border-bottom:1px solid var(--ochre);padding-bottom:1px;transition:color .2s}
-  .meta a:hover{color:var(--ochre)}
-  @keyframes rise{to{opacity:1;transform:none}}
-  @keyframes fade{to{opacity:1}}
-  @media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important;transform:none!important}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="card">
-    <p class="eyebrow">Hertie School &middot; Berlin</p>
+
+<header class="site-header" id="top">
+  <nav class="wrap nav">
+    <a class="brand" href="index.html">Mujaheed <span>Shaikh</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li class="has-dropdown">
+        <a href="peer-reviewed-publications.html" class="drop-toggle">Publications <span class="caret">&#9662;</span></a>
+        <ul class="dropdown">
+          <li><a href="peer-reviewed-publications.html">Peer-Reviewed Articles</a></li>
+          <li><a href="book-chapters.html">Book Chapters</a></li>
+          <li><a href="policy-contributions.html">Policy Contributions</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="research-seminars.html" class="drop-toggle">Talks &amp; Awards <span class="caret">&#9662;</span></a>
+        <ul class="dropdown">
+          <li><a href="research-seminars.html">Research Seminars</a></li>
+          <li><a href="policy-talks.html">Policy Talks</a></li>
+          <li><a href="awards-grants.html">Awards &amp; Grants</a></li>
+        </ul>
+      </li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="#press">Media</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <label class="hamburger" for="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+  </nav>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero has-photo" id="hero" style="--bg:url('speaking-policy.jpg')">
+  <div class="wrap hero-inner">
+    <p class="hero-eyebrow">Health Economist &middot; Hertie School, Berlin</p>
     <h1>Mujaheed<br><em>Shaikh</em></h1>
-    <p class="msg">My website is being rebuilt and will be back shortly. Thank you for your patience.</p>
-    <div class="rule"></div>
-    <p class="meta">
-      Professor of Health Governance, Hertie School<br>
-      <a href="mailto:shaikh@hertie-school.org">shaikh@hertie-school.org</a>
-    </p>
-  </main>
+    <p class="hero-sub">I study how policy and institutional design shape health and health systems.</p>
+    <div class="hero-meta">
+      <span>Professor of Health Governance</span>
+      <span>Associate Editor, The European Journal of Health Economics</span>
+      <span>Advisory Board, BMJ Public Health</span>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</section>
+
+<!-- ============== ABOUT ============== -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-text reveal">
+      <p class="section-label">About</p>
+      <p class="mission">A health economist interested in all things related to health and healthcare, with a passion to bridge academia and policy to increase scientific impact and make the world a healthier place.</p>
+      <div class="about-body">
+        <p>I am a tenured full Professor of Health Governance at the Hertie School in Berlin. My work examines how regulation and institutional design shape health and health systems, with particular attention to pharmaceutical innovation for rare and neglected diseases, access to medicines, and the regulatory frameworks that govern both.</p>
+        <p>I am an Associate Editor at <strong>The European Journal of Health Economics</strong> and an Advisory Board Member at <strong>British Medical Journal Public Health</strong>. I hold a PhD in Economics from Frankfurt School of Finance and Management and a Master in International Health Management from Imperial College London.</p>
+        <p><a class="inline" href="index.html">Read the full bio &rarr;</a></p>
+      </div>
+      <dl class="facts">
+        <div><dt>Position</dt><dd>Professor of Health Governance, Hertie School</dd></div>
+        <div><dt>Associate Editor</dt><dd>The European Journal of Health Economics</dd></div>
+        <div><dt>Advisory Board</dt><dd>BMJ Public Health</dd></div>
+      </dl>
+    </div>
+    <figure class="portrait reveal">
+      <img src="SNS summit two.jpg" alt="Mujaheed Shaikh">
+      <figcaption class="credit">Hertie School &middot; Friedrichstra&szlig;e 180, Berlin</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============== RESEARCH ============== -->
+<section class="research" id="research">
+  <div class="wrap">
+    <p class="section-label reveal">Research</p>
+
+    <div class="theme reveal">
+      <div class="theme-num">01</div>
+      <div>
+        <h3>Health Behaviour &amp; Inequalities</h3>
+        <p class="lede">How life-course events and social position shape health: retirement, smoking, maternal leave, misperception of one's own health, and inequalities running from the caste system to arts engagement.</p>
+        <ul class="pub-list">
+          <li><a href="https://doi.org/10.1016/j.jhealeco.2025.103004" target="_blank" rel="noopener">
+            <span class="pub-title">Absence from work and lifetime smoking behaviour: evidence from European maternal leave policies<span class="where">Journal of Health Economics, with Renner &amp; Spitzer</span></span>
+            <span class="pub-year">2025</span></a></li>
+          <li><a href="peer-reviewed-publications.html">
+            <span class="pub-title">Retirement and health plan choice<span class="where">Social Science &amp; Medicine, with Mueller &amp; Kauer</span></span>
+            <span class="pub-year">2025</span></a></li>
+          <li><a href="peer-reviewed-publications.html">
+            <span class="pub-title">Retirement and household expenditure in turbulent times<span class="where">Journal of Family and Economic Issues, with Laliotis, Stavropoulou &amp; Kourouklis</span></span>
+            <span class="pub-year">2023</span></a></li>
+          <li><a href="peer-reviewed-publications.html">
+            <span class="pub-title">Older Europeans' health perception and adaptive behaviour during the COVID-19 pandemic<span class="where">European Journal of Public Health, with Spitzer &amp; Weber</span></span>
+            <span class="pub-year">2022</span></a></li>
+          <li><a href="peer-reviewed-publications.html">
+            <span class="pub-title">Health misperception and healthcare utilisation of older Europeans<span class="where">The Journal of the Economics of Ageing, with Spitzer</span></span>
+            <span class="pub-year">2022</span></a></li>
+          <li><a href="peer-reviewed-publications.html">
+            <span class="pub-title">Socioeconomic inequalities in arts engagement and depression among older adults in the UK<span class="where">Public Health, with Tymoszuk, Williamon &amp; Miraldo</span></span>
+            <span class="pub-year">2021</span></a></li>
+          <li><a href="https://doi.org/10.1016/j.jhealeco.2017.10.005" target="_blank" rel="noopener">
+            <span class="pub-title">Your retirement and my health behaviour: retirement externalities from a fuzzy RD design<span class="where">Journal of Health Economics, with Mueller</span></span>
+            <span class="pub-year">2018</span></a></li>
+          <li><a href="https://doi.org/10.1371/journal.pone.0205697" target="_blank" rel="noopener">
+            <span class="pub-title">Waiting time at health facilities and social class: evidence from the Indian caste system<span class="where">PLOS ONE, with Miraldo &amp; Renner</span></span>
+            <span class="pub-year">2018</span></a></li>
+        </ul>
+        <a class="theme-more" href="peer-reviewed-publications.html">All publications <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="theme reveal">
+      <div class="theme-num">02</div>
+      <div>
+        <h3>Health Governance &amp; Public Policy</h3>
+        <p class="lede">How governments organise, fund, and regulate health systems, from non-pharmaceutical interventions during COVID-19 to vaccination programmes, geographical disparities, and the global financing of disease control.</p>
+        <ul class="pub-list">
+          <li><a href="peer-reviewed-publications.html">
+            <span class="pub-title">Spillover of health programmes on vaccinations: the Zinc and Oral Rehydration Salt Programme in India<span class="where">BMJ Public Health, with Van Gestel, Riumallo-Herl &amp; Vermijs</span></span>
+            <span class="pub-year">2025</span></a></li>
+          <li><a href="peer-reviewed-publications.html">
+            <span class="pub-title">Childhood immunization and competing mortality risks in Kenya: a longitudinal analysis for multiparous mothers<span class="where">Journal of Pediatrics, with Ota &amp; Van Gestel</span></span>
+            <span class="pub-year">2023</span></a></li>
+          <li><a href="https://doi.org/10.1017/S1744133121000293" target="_blank" rel="noopener">
+            <span class="pub-title">Strengthening health system governance in Germany: looking back, planning ahead<span class="where">Health Economics, Policy and Law, with Schmitt &amp; Haarmann</span></span>
+            <span class="pub-year">2022</span></a></li>
+          <li><a href="https://www.pnas.org/doi/10.1073/pnas.2021359118" target="_blank" rel="noopener">
+            <span class="pub-title">Impacts of introducing and lifting non-pharmaceutical interventions on COVID-19 daily growth rate and compliance in the United States<span class="where">PNAS, with Singh, Hauck &amp; Miraldo</span></span>
+            <span class="pub-year">2021</span></a></li>
+          <li><a href="peer-reviewed-publications.html">
+            <span class="pub-title">Measuring geographical disparities in England at the time of COVID-19<span class="where">BMJ Open, with Nicodemo, Barzin, Cavalli et al.</span></span>
+            <span class="pub-year">2020</span></a></li>
+          <li><a href="peer-reviewed-publications.html">
+            <span class="pub-title">Vertical and horizontal equity of funding for malaria control: a global multisource analysis<span class="where">BMJ Global Health, with Barrenho, Miraldo &amp; Atun</span></span>
+            <span class="pub-year">2017</span></a></li>
+        </ul>
+        <a class="theme-more" href="peer-reviewed-publications.html">All publications <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="theme reveal">
+      <div class="theme-num">03</div>
+      <div>
+        <h3>Pharmaceutical Economics &amp; Access to Medicines</h3>
+        <p class="lede">What price regulation does to research and development, how pharmaceutical spending tracks national income, and what medicine shortages mean for patients and supply chains.</p>
+        <ul class="pub-list">
+          <li><a href="https://doi.org/10.1007/s40258-020-00601-9" target="_blank" rel="noopener">
+            <span class="pub-title">Revisiting the relationship between price regulation and pharmaceutical R&amp;D investment<span class="where">Applied Health Economics and Health Policy, with Del Giudice &amp; Kourouklis</span></span>
+            <span class="pub-year">2020</span></a></li>
+          <li><a href="https://doi.org/10.1002/hec.3833" target="_blank" rel="noopener">
+            <span class="pub-title">Pharmaceutical expenditure and gross domestic product: a two-step instrumental variables strategy<span class="where">Health Economics, with Gandjour</span></span>
+            <span class="pub-year">2019</span></a></li>
+          <li><a href="peer-reviewed-publications.html">
+            <span class="pub-title">The consequences of medicine shortages on healthcare utilisation and care fragmentation<span class="where">R&amp;R, European Journal of Health Economics &middot; with Goetjes, Panhuysen &amp; Blankart</span></span>
+            <span class="pub-year">WP</span></a></li>
+        </ul>
+        <a class="theme-more" href="peer-reviewed-publications.html">All publications <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============== PRESS ============== -->
+<section class="press" id="press">
+  <div class="wrap">
+    <p class="section-label reveal">In the Press</p>
+    <h2 class="reveal">Research and commentary <em>(selection).</em></h2>
+    <div class="press-grid">
+      <div class="press-item reveal">
+        <a href="https://www.ft.com/content/6143300d-d11a-4b2f-898c-87c5dd0ff6ce" target="_blank" rel="noopener">
+          <div class="outlet">Financial Times</div>
+          <div class="headline">The world's broken market for medicines</div>
+        </a>
+      </div>
+      <div class="press-item reveal">
+        <a href="media.html">
+          <div class="outlet">Daily Mail &middot; Der Standard</div>
+          <div class="headline">Health misperception and healthcare use among older Europeans</div>
+        </a>
+      </div>
+      <div class="press-item reveal">
+        <a href="media.html">
+          <div class="outlet">BMJ Emergency Medicine Journal</div>
+          <div class="headline">Geographical disparities in England during COVID-19 &mdash; selected a monthly top-five article</div>
+        </a>
+      </div>
+    </div>
+    <div class="outlet-strip reveal">
+      <span>New York Times</span><span>The Conversation</span><span>Yahoo News</span><span>MedicalXpress</span><span>AAAS EurekAlert</span><span>Phys.org</span><span>News Medical</span><span>Kurier</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== WORK IN PROGRESS ============== -->
+<section class="wip" id="working-papers">
+  <div class="wrap">
+    <p class="section-label reveal">Work in Progress</p>
+    <div class="wip-grid">
+      <div class="wip-card reveal">
+        <div class="status">R&amp;R &middot; Eur. J. Health Economics</div>
+        <h4>The consequences of medicine shortages on healthcare utilisation and care fragmentation</h4>
+        <p class="auth">Goetjes, Panhuysen, Blankart &amp; Shaikh</p>
+      </div>
+      <div class="wip-card reveal">
+        <div class="status">R&amp;R &middot; Healthcare Management Science</div>
+        <h4>Medicine shortages, global dependency, and competition in times of a pandemic</h4>
+        <p class="auth">Goetjes, Panhuysen, Shaikh &amp; Blankart</p>
+      </div>
+      <div class="wip-card reveal">
+        <div class="status">Working Paper</div>
+        <h4>Enforcement, substitution, and the effectiveness of COVID-19 vaccine mandates</h4>
+        <p class="auth">Shaikh, Miraldo &amp; Galizzi</p>
+      </div>
+      <div class="wip-card reveal">
+        <div class="status">Working Paper</div>
+        <h4>Leader identity and Cesarean childbirths: evidence from random allocation of leaders</h4>
+        <p class="auth">Shaikh &amp; Van Gestel</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="name">Mujaheed Shaikh</p>
+        <p>Professor of Health Governance, Hertie School, Berlin.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="#about">About</a>
+        <a href="peer-reviewed-publications.html">Publications</a>
+        <a href="book-chapters.html">Book Chapters</a>
+        <a href="policy-contributions.html">Policy Contributions</a>
+        <a href="teaching.html">Teaching</a>
+      </div>
+      <div class="footer-col">
+        <h5>More</h5>
+        <a href="awards-grants.html">Awards &amp; Grants</a>
+        <a href="research-seminars.html">Research Seminars</a>
+        <a href="policy-talks.html">Policy Talks</a>
+        <a href="media.html">Media</a>
+        <a href="mailto:shaikh@hertie-school.org">shaikh@hertie-school.org</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Mujaheed Shaikh &middot; Hertie School, Friedrichstra&szlig;e 180, 10117 Berlin</span>
+      <span><a href="mailto:shaikh@hertie-school.org">shaikh@hertie-school.org</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // shrink-header border on scroll
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+
+  // close mobile menu after click
+  const toggle = document.getElementById('nav-toggle');
+  document.querySelectorAll('.nav-links a').forEach(a =>
+    a.addEventListener('click', () => { toggle.checked = false; }));
+
+  // scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

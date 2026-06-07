@@ -591,3 +591,62 @@ section { padding-block: clamp(4rem, 9vw, 8rem); }
 @media (min-width: 900px) and (prefers-reduced-motion: no-preference) {
   .hero.has-photo, .page-head.has-photo { background-attachment: fixed, fixed; }
 }
+
+/* ============================================================
+   Nav dropdowns
+   ============================================================ */
+.nav-links .has-dropdown { position: relative; }
+.nav-links .drop-toggle { display: inline-flex; align-items: center; gap: .34rem; }
+.nav-links .caret { font-size: .62em; line-height: 1; transition: transform .25s ease; }
+.nav-links .has-dropdown:hover .caret,
+.nav-links .has-dropdown:focus-within .caret { transform: rotate(180deg); }
+
+.nav-links .dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: -0.9rem;
+  min-width: 236px;
+  list-style: none;
+  margin: 0;
+  padding: .45rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  box-shadow: 0 22px 44px -26px rgba(22,61,51,.55);
+  opacity: 0; visibility: hidden; transform: translateY(8px);
+  transition: opacity .22s ease, transform .22s ease, visibility .22s;
+  z-index: 200;
+}
+.nav-links .dropdown::before {           /* invisible hover bridge */
+  content: ""; position: absolute; top: -14px; left: 0; right: 0; height: 14px;
+}
+.nav-links .has-dropdown:hover .dropdown,
+.nav-links .has-dropdown:focus-within .dropdown {
+  opacity: 1; visibility: visible; transform: translateY(0);
+}
+.nav-links .dropdown li { width: 100%; }
+.nav-links .dropdown a {
+  display: block;
+  padding: .62rem .8rem;
+  font-size: .92rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-soft);
+  border-radius: 5px;
+}
+.nav-links .dropdown a::after { display: none; }
+.nav-links .dropdown a:hover { background: var(--pine-tint); color: var(--pine); }
+
+/* dropdowns inside the mobile stacked menu: show children inline */
+@media (max-width: 860px) {
+  .nav-links .has-dropdown { width: 100%; display: block; }
+  .nav-links .caret { display: none; }
+  .nav-links .dropdown {
+    position: static; opacity: 1; visibility: visible; transform: none;
+    box-shadow: none; border: none; background: transparent;
+    padding: 0 0 .5rem 1rem; min-width: 0;
+  }
+  .nav-links .dropdown::before { display: none; }
+  .nav-links .dropdown a { padding: .5rem 0; font-size: .98rem; color: var(--muted); }
+}
